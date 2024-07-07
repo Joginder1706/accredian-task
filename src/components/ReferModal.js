@@ -63,6 +63,7 @@ function ReferModal({ isOpen, onClose }) {
     } catch (error) {
       alert("Error submitting referral!");
       console.error("Error submitting referral:", error);
+      setLoading(false);
     }
   };
 
